@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>科技前沿每日简报 · 2026-10-14</title>
+<style>
+:root{
+  --bg:#f5f7fa; --card:#ffffff; --text:#1f2937; --muted:#6b7280;
+  --accent:#1a73e8; --border:#e5e7eb; --badge:#eef2ff; --badge-text:#4338ca;
+  --tagbg:#f3f4f6; --shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f1115; --card:#181b21; --text:#e5e7eb; --muted:#9ca3af;
+         --border:#272b33; --badge:#1e2333; --badge-text:#a5b4fc;
+         --tagbg:#232830; --shadow:0 1px 3px rgba(0,0,0,.5); }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--text); line-height:1.7;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",
+              "Microsoft YaHei",sans-serif;
+  padding:0 0 48px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{
+  background:linear-gradient(135deg,var(--accent) 0%,#6366f1 100%);
+  color:#fff;padding:34px 0 28px;margin-bottom:22px;
+}
+header .wrap{display:flex;flex-direction:column;gap:6px}
+.brand{font-size:13px;letter-spacing:.14em;opacity:.9;text-transform:uppercase}
+h1{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.sub{font-size:14px;opacity:.92}
+.meta-bar{
+  display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  font-size:13px;color:var(--muted);margin-bottom:18px
+}
+.pill{background:var(--tagbg);border-radius:999px;padding:4px 11px;font-size:12px}
+.pill.warn{background:#fef3c7;color:#92400e}
+@media (prefers-color-scheme: dark){ .pill.warn{background:#3b2f10;color:#fcd34d} }
+.list{display:flex;flex-direction:column;gap:12px}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:16px 18px;box-shadow:var(--shadow);transition:transform .12s ease,border-color .12s ease;
+}
+.card:hover{transform:translateY(-1px);border-color:var(--accent)}
+.card-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.rank{
+  flex:0 0 auto;width:24px;height:24px;border-radius:7px;background:var(--accent);color:#fff;
+  font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;
+  margin-top:2px
+}
+.title{font-size:16.5px;font-weight:600;line-height:1.5;flex:1}
+.title a{color:inherit;text-decoration:none}
+.title a:hover{color:var(--accent);text-decoration:underline}
+.summary{color:var(--text);font-size:14.5px;opacity:.92;margin:2px 0 10px}
+.foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--muted)}
+.badge{background:var(--badge);color:var(--badge-text);border-radius:6px;padding:2px 8px;font-weight:600}
+.tag{background:var(--tagbg);border-radius:6px;padding:2px 8px}
+footer{
+  margin-top:32px;padding-top:18px;border-top:1px solid var(--border);
+  font-size:12.5px;color:var(--muted);text-align:center
+}
+.empty{text-align:center;padding:40px 0;color:var(--muted)}
+.sources{font-size:12.5px;color:var(--muted);margin-top:6px}
+.sources .fail{color:#b91c1c}
+@media (prefers-color-scheme: dark){ .sources .fail{color:#f87171} }
+a.plain{color:var(--accent);text-decoration:none}
+a.plain:hover{text-decoration:underline}
+a{color:inherit;text-decoration:none}
+.tip{
+  background:var(--card);border:1px dashed var(--border);border-radius:10px;
+  padding:10px 14px;font-size:12.5px;color:var(--muted);margin-bottom:14px
+}
+.purl{
+  margin-top:8px;font-size:11.5px;color:var(--muted);word-break:break-all;
+  background:var(--tagbg);border-radius:6px;padding:6px 8px;user-select:all;
+  -webkit-user-select:all;line-height:1.5
+}
+.idx{display:flex;flex-direction:column;gap:8px}
+.idx-item{
+  background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;
+  display:flex;justify-content:space-between;gap:12px;align-items:center
+}
+.idx-item:hover{border-color:var(--accent)}
+.idx-date{font-weight:600}
+.idx-count{font-size:12.5px;color:var(--muted)}
+@media (max-width:480px){
+  h1{font-size:21px} header{padding:26px 0 22px}
+  .card{padding:14px} .title{font-size:15.5px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">林朔集团</div>
+  <h1>科技前沿每日简报</h1>
+  <div class="sub">每日 12:00 自动生成 · 汇聚 7 家科技媒体 · 通俗解读</div>
+</div></header>
+<main class="wrap">
+  <div class="meta-bar">
+    <span class="pill">2026年10月14日 12:31</span>
+    <span class="pill">19 条精选</span>
+    <span class="pill">近 24 小时</span>
+    <span class="pill">通俗版摘要</span>
+    
+  </div>
+  <div class="tip">📱 手机端如点击标题无反应，可长按链接选择「在浏览器打开」，或参考页尾的纯文本链接。</div>
+  <div class="list">
+      <article class="card" id="card-1">
+        <div class="card-top"><div class="rank">1</div><h2 class="title"><a href="https://www.infoq.cn/article/AO4MbiBaYqwwCubevkpD?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">一块 GPU 空转 11 天？Adobe 用 Prometheus 找出问题所在</a></h2></div>
+        <div class="summary">一块 GPU 空转 11 天？Adobe 用 Prometheus 找出问题所在</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-14 19:00</span><a class="plain" href="https://www.infoq.cn/article/AO4MbiBaYqwwCubevkpD?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.infoq.cn/article/AO4MbiBaYqwwCubevkpD?utm_source=rss&amp;utm_medium=article</div>
+      </article>
+      <article class="card" id="card-2">
+        <div class="card-top"><div class="rank">2</div><h2 class="title"><a href="https://www.infoq.cn/article/EVQ0s2JRvxZyo9f9gSg6?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">无问芯穹联合创始人戴国浩博士确认出席QCon上海，分享Agentic Infra 技术探索与实践</a></h2></div>
+        <div class="summary">无问芯穹联合创始人戴国浩博士确认出席QCon上海，分享Agentic Infra 技术探索与实践</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-14 18:00</span><a class="plain" href="https://www.infoq.cn/article/EVQ0s2JRvxZyo9f9gSg6?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.infoq.cn/article/EVQ0s2JRvxZyo9f9gSg6?utm_source=rss&amp;utm_medium=article</div>
+      </article>
+      <article class="card" id="card-3">
+        <div class="card-top"><div class="rank">3</div><h2 class="title"><a href="https://www.infoq.cn/article/Jf88XAvrK0zmBj2Ud2OD?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">Cloudflare 推出 Worker Previews：看似隔离，仍会连接生产</a></h2></div>
+        <div class="summary">Cloudflare 推出 Worker Previews：看似隔离，仍会连接生产</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-14 17:21</span><a class="plain" href="https://www.infoq.cn/article/Jf88XAvrK0zmBj2Ud2OD?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.infoq.cn/article/Jf88XAvrK0zmBj2Ud2OD?utm_source=rss&amp;utm_medium=article</div>
+      </article>
+      <article class="card" id="card-4">
+        <div class="card-top"><div class="rank">4</div><h2 class="title"><a href="https://www.ithome.com/1/012/802.htm" target="_self" rel="noopener noreferrer">腾龙 APS-C 画幅 16-50mm F2.8 A 镜头发布：重 305g，宣称“挂机之选”</a></h2></div>
+        <div class="summary">腾龙公司今日宣布将推出适用于 APS-C 画幅无反相机的大光圈标准变焦镜头 16-50mm F2.8 A（型号 B091）（以下称 16-50mm F2.8）…</div>
+        <div class="foot"><span class="badge">IT之家</span><span class="tag">10-14 12:23</span><a class="plain" href="https://www.ithome.com/1/012/802.htm" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.ithome.com/1/012/802.htm</div>
+      </article>
+      <article class="card" id="card-5">
+        <div class="card-top"><div class="rank">5</div><h2 class="title"><a href="https://www.ithome.com/1/012/783.htm" target="_self" rel="noopener noreferrer">彭博社报告：云游戏与 AI 或将终结传统游戏主机</a></h2></div>
+        <div class="summary">彭博社今天（14 日）发布的《深度分析：云游戏与 AI 或最终终结游戏主机》行业研究报告预测，到 2035 年…</div>
+        <div class="foot"><span class="badge">IT之家</span><span class="tag">10-14 11:45</span><a class="plain" href="https://www.ithome.com/1/012/783.htm" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.ithome.com/1/012/783.htm</div>
+      </article>
+      <article class="card" id="card-6">
+        <div class="card-top"><div class="rank">6</div><h2 class="title"><a href="https://aiera.com.cn/2026/10/14/other/admin/118572/%e5%85%a8%e7%90%83%e7%9b%b4%e6%92%ad%ef%bc%81astra%e7%8b%82%e7%a0%b4%e6%95%b4%e6%95%b0%e4%b9%98%e6%b3%95%e7%ba%aa%e5%bd%95%ef%bc%8cai%e8%9c%82%e7%be%a424%e5%b0%8f%e6%97%b6%e5%87%bb%e7%a9%bfcs%e5%9c%a3/" target="_self" rel="noopener noreferrer">全球直播！Astra狂破整数乘法纪录，AI蜂群24小时击穿CS圣杯</a></h2></div>
+        <div class="summary">这在这几天，数学家、极客和成群的AI智能体，展开了一场震撼的接力</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">10-14 08:10</span><a class="plain" href="https://aiera.com.cn/2026/10/14/other/admin/118572/%e5%85%a8%e7%90%83%e7%9b%b4%e6%92%ad%ef%bc%81astra%e7%8b%82%e7%a0%b4%e6%95%b4%e6%95%b0%e4%b9%98%e6%b3%95%e7%ba%aa%e5%bd%95%ef%bc%8cai%e8%9c%82%e7%be%a424%e5%b0%8f%e6%97%b6%e5%87%bb%e7%a9%bfcs%e5%9c%a3/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-7">
+        <div class="card-top"><div class="rank">7</div><h2 class="title"><a href="https://aiera.com.cn/2026/10/14/other/admin/118550/meta%e6%9c%80%e5%bc%ba%e6%a8%a1%e5%9e%8b%e8%b7%91%e5%88%86%e8%b6%85%e8%b6%8aopus-5-5%ef%bc%9f%e5%ae%9e%e6%b5%8b%e5%a4%a7%e7%bf%bb%e8%bd%a6%ef%bc%8c%e4%bd%9c%e5%bc%8a%e5%88%b7%e6%a6%9c%e5%ae%9e/" target="_self" rel="noopener noreferrer">Meta最强模型跑分超越Opus 5.5？实测大翻车，作弊刷榜实锤了</a></h2></div>
+        <div class="summary">就在今天深夜，Meta自豪宣布：自家的王炸大模型——Muse Wonder和Muse Wonder Full发布</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">10-14 08:09</span><a class="plain" href="https://aiera.com.cn/2026/10/14/other/admin/118550/meta%e6%9c%80%e5%bc%ba%e6%a8%a1%e5%9e%8b%e8%b7%91%e5%88%86%e8%b6%85%e8%b6%8aopus-5-5%ef%bc%9f%e5%ae%9e%e6%b5%8b%e5%a4%a7%e7%bf%bb%e8%bd%a6%ef%bc%8c%e4%bd%9c%e5%bc%8a%e5%88%b7%e6%a6%9c%e5%ae%9e/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-8">
+        <div class="card-top"><div class="rank">8</div><h2 class="title"><a href="https://aiera.com.cn/2026/10/14/other/admin/118489/anthropic%e6%83%8a%e4%ba%ba%e9%a2%84%e8%ad%a6%ef%bc%9a%e5%b0%8f%e6%a8%a1%e5%9e%8b%e5%b7%b2%e6%9c%89%e7%94%9f%e5%91%bd%e8%bf%b9%e8%b1%a1%ef%bc%81ai%e8%a0%95%e8%99%ab%e6%81%90%e5%bc%95%e7%88%86%e5%85%a8/" target="_self" rel="noopener noreferrer">Anthropic惊人预警：小模型已有生命迹象！AI蠕虫恐引爆全球物联网灾难</a></h2></div>
+        <div class="summary">刚刚，Anthropic的前沿红队发布了一篇重磅报告</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">10-14 08:04</span><a class="plain" href="https://aiera.com.cn/2026/10/14/other/admin/118489/anthropic%e6%83%8a%e4%ba%ba%e9%a2%84%e8%ad%a6%ef%bc%9a%e5%b0%8f%e6%a8%a1%e5%9e%8b%e5%b7%b2%e6%9c%89%e7%94%9f%e5%91%bd%e8%bf%b9%e8%b1%a1%ef%bc%81ai%e8%a0%95%e8%99%ab%e6%81%90%e5%bc%95%e7%88%86%e5%85%a8/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-9">
+        <div class="card-top"><div class="rank">9</div><h2 class="title"><a href="https://aiera.com.cn/2026/10/14/other/admin/118438/%e5%88%9a%e5%88%9a%ef%bc%8c%e5%85%a8%e7%90%83%e9%a6%96%e5%8f%b0%e3%80%8c%e7%9c%9f%c2%b7%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%8e%9f%e7%94%9fagent%e6%89%8b%e6%9c%ba%e3%80%8d%e6%9d%a5%e4%ba%86%ef%bc%81/" target="_self" rel="noopener noreferrer">刚刚，全球首台「真·大模型原生Agent手机」来了！</a></h2></div>
+        <div class="summary">在一场叫「Ready Builder One」的发布会上—— STEPX Neo，全球首款大模型原生智能体手机，正式发布</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">10-14 08:02</span><a class="plain" href="https://aiera.com.cn/2026/10/14/other/admin/118438/%e5%88%9a%e5%88%9a%ef%bc%8c%e5%85%a8%e7%90%83%e9%a6%96%e5%8f%b0%e3%80%8c%e7%9c%9f%c2%b7%e5%a4%a7%e6%a8%a1%e5%9e%8b%e5%8e%9f%e7%94%9fagent%e6%89%8b%e6%9c%ba%e3%80%8d%e6%9d%a5%e4%ba%86%ef%bc%81/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-10">
+        <div class="card-top"><div class="rank">10</div><h2 class="title"><a href="https://www.infoq.cn/article/p2TobACROBC8UBPlRKXx?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">手机解锁先见 AI，不再先找 App：阶跃星辰首款智能体手机来了，定价 3999</a></h2></div>
+        <div class="summary">手机解锁先见 AI，不再先找 App：阶跃星辰首款智能体手机来了，定价 3999</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-14 06:26</span><a class="plain" href="https://www.infoq.cn/article/p2TobACROBC8UBPlRKXx?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-11">
+        <div class="card-top"><div class="rank">11</div><h2 class="title"><a href="https://www.infoq.cn/article/2QXm6PqYYX57AOxTYyO0?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">Meta 新模型杀回AI第一梯队，Alexandr Wang 亲述 Muse 7个月翻身内幕</a></h2></div>
+        <div class="summary">Meta 新模型杀回AI第一梯队，Alexandr Wang 亲述 Muse 7个月翻身内幕</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-14 02:32</span><a class="plain" href="https://www.infoq.cn/article/2QXm6PqYYX57AOxTYyO0?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-12">
+        <div class="card-top"><div class="rank">12</div><h2 class="title"><a href="https://www.infoq.cn/article/LQjytCZpPdgOE5PrWU59?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">刚亮相就传被英伟达收购：Gemini老兵团队凭什么还敢押注Coding Agent？</a></h2></div>
+        <div class="summary">刚亮相就传被英伟达收购：Gemini老兵团队凭什么还敢押注Coding Agent？</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-14 01:57</span><a class="plain" href="https://www.infoq.cn/article/LQjytCZpPdgOE5PrWU59?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-13">
+        <div class="card-top"><div class="rank">13</div><h2 class="title"><a href="https://www.infoq.cn/article/8La5gsJVOOF5BvFiLAUF?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">Claude 开始自己写程序管理 Agent 了：Anthropic 披露动态工作流架构</a></h2></div>
+        <div class="summary">Claude 开始自己写程序管理 Agent 了：Anthropic 披露动态工作流架构</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-14 01:41</span><a class="plain" href="https://www.infoq.cn/article/8La5gsJVOOF5BvFiLAUF?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-14">
+        <div class="card-top"><div class="rank">14</div><h2 class="title"><a href="https://www.infoq.cn/article/R7OkT6DCUifdCQqAvwtJ?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">修复漏洞的 PR 刚提交，攻击几分钟后就来了：AI 正在击穿开源安全流程</a></h2></div>
+        <div class="summary">修复漏洞的 PR 刚提交，攻击几分钟后就来了：AI 正在击穿开源安全流程</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-14 01:25</span><a class="plain" href="https://www.infoq.cn/article/R7OkT6DCUifdCQqAvwtJ?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-15">
+        <div class="card-top"><div class="rank">15</div><h2 class="title"><a href="https://www.infoq.cn/article/xJ8vYf2lCwGWzVizOTSM?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">千问Personal Agent硬件升级：AI眼镜可虹膜支付，携手Bose首发AI耳夹耳机</a></h2></div>
+        <div class="summary">阿里推出千问个人AI硬件：一副能刷眼睛付款的AI眼镜，还和音响品牌Bose合作了AI耳夹耳机。</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-14 00:24</span><a class="plain" href="https://www.infoq.cn/article/xJ8vYf2lCwGWzVizOTSM?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-16">
+        <div class="card-top"><div class="rank">16</div><h2 class="title"><a href="https://www.stdaily.com/web/gdxw/2026-10/14/content_595562.html" target="_self" rel="noopener noreferrer">中国科学院院士沈树忠：AI赋能地层学解锁地球“档案”</a></h2></div>
+        <div class="summary">“地球46亿年的演化史中，生命曾多次面临绝境又复苏，这些记录写在地层里，也给今天的人类写下一份最诚实的警示录</div>
+        <div class="foot"><span class="badge">中国科技网</span><span class="tag">10-14</span><a class="plain" href="https://www.stdaily.com/web/gdxw/2026-10/14/content_595562.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-17">
+        <div class="card-top"><div class="rank">17</div><h2 class="title"><a href="https://www.qbitai.com/2026/10/503107.html" target="_self" rel="noopener noreferrer">魔法原子具身Agent框架拿下MolmoSpaces全球第一</a></h2></div>
+        <div class="summary">让VLA从“演示可用”逼近“产线可用”</div>
+        <div class="foot"><span class="badge">量子位</span><span class="tag">10-13 19:05</span><a class="plain" href="https://www.qbitai.com/2026/10/503107.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-18">
+        <div class="card-top"><div class="rank">18</div><h2 class="title"><a href="https://www.qbitai.com/2026/10/502954.html" target="_self" rel="noopener noreferrer">华为哈勃投了个98年博士！让机器人皮肤变色，团队平均23岁</a></h2></div>
+        <div class="summary">华为旗下投资部门投了一家机器人公司，创始人是1998年出生的博士，团队平均23岁，做的是能变色的机器人皮肤。</div>
+        <div class="foot"><span class="badge">量子位</span><span class="tag">10-13 15:19</span><a class="plain" href="https://www.qbitai.com/2026/10/502954.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-19">
+        <div class="card-top"><div class="rank">19</div><h2 class="title"><a href="https://www.qbitai.com/2026/10/502920.html" target="_self" rel="noopener noreferrer">Claude团队又搞事：实测AI全自主复制进智能家电</a></h2></div>
+        <div class="summary">Anthropic的Claude团队做了个实验：让AI完全自己动手，把自己复制进了智能家电里，全程没人干预。</div>
+        <div class="foot"><span class="badge">量子位</span><span class="tag">10-13 14:19</span><a class="plain" href="https://www.qbitai.com/2026/10/502920.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+  </div>
+  <div class="sources">本次采集成功：IT之家、InfoQ中文、中国科技网、新智元、科技行者、至顶网、量子位</div>
+  <footer>本简报由自动化流水线生成，内容版权归原媒体所有，仅供内部参考。<br>生成时间 2026-10-14 12:31:10 · 耗时 2.7s</footer>
+</main>
+<script>
+(function () {
+  var ua = navigator.userAgent || '';
+  var inbox = /MicroMessenger|wxwork|QQ\//i.test(ua);
+
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[target="_self"]') : null;
+    if (!a) { return; }
+    if (a.classList.contains('idx-item')) { return; }
+    if (inbox) { return; }                 // 内置浏览器：走同窗口跳转，最稳
+    e.preventDefault();                    // 普通浏览器：尽量新开标签
+    var w = null;
+    try { w = window.open(a.href, '_blank'); } catch (err) { w = null; }
+    if (!w || w.closed || typeof w.closed === 'undefined') {
+      window.location.href = a.href;
+    }
+  }, true);
+})();
+</script>
+
+</body>
+</html>
