@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>科技前沿每日简报 · 2026-10-27</title>
+<style>
+:root{
+  --bg:#f5f7fa; --card:#ffffff; --text:#1f2937; --muted:#6b7280;
+  --accent:#1a73e8; --border:#e5e7eb; --badge:#eef2ff; --badge-text:#4338ca;
+  --tagbg:#f3f4f6; --shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f1115; --card:#181b21; --text:#e5e7eb; --muted:#9ca3af;
+         --border:#272b33; --badge:#1e2333; --badge-text:#a5b4fc;
+         --tagbg:#232830; --shadow:0 1px 3px rgba(0,0,0,.5); }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--text); line-height:1.7;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",
+              "Microsoft YaHei",sans-serif;
+  padding:0 0 48px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{
+  background:linear-gradient(135deg,var(--accent) 0%,#6366f1 100%);
+  color:#fff;padding:34px 0 28px;margin-bottom:22px;
+}
+header .wrap{display:flex;flex-direction:column;gap:6px}
+.brand{font-size:13px;letter-spacing:.14em;opacity:.9;text-transform:uppercase}
+h1{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.sub{font-size:14px;opacity:.92}
+.meta-bar{
+  display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  font-size:13px;color:var(--muted);margin-bottom:18px
+}
+.pill{background:var(--tagbg);border-radius:999px;padding:4px 11px;font-size:12px}
+.pill.warn{background:#fef3c7;color:#92400e}
+@media (prefers-color-scheme: dark){ .pill.warn{background:#3b2f10;color:#fcd34d} }
+.list{display:flex;flex-direction:column;gap:12px}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:16px 18px;box-shadow:var(--shadow);transition:transform .12s ease,border-color .12s ease;
+}
+.card:hover{transform:translateY(-1px);border-color:var(--accent)}
+.card-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.rank{
+  flex:0 0 auto;width:24px;height:24px;border-radius:7px;background:var(--accent);color:#fff;
+  font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;
+  margin-top:2px
+}
+.title{font-size:16.5px;font-weight:600;line-height:1.5;flex:1}
+.title a{color:inherit;text-decoration:none}
+.title a:hover{color:var(--accent);text-decoration:underline}
+.summary{color:var(--text);font-size:14.5px;opacity:.92;margin:2px 0 10px}
+.foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--muted)}
+.badge{background:var(--badge);color:var(--badge-text);border-radius:6px;padding:2px 8px;font-weight:600}
+.tag{background:var(--tagbg);border-radius:6px;padding:2px 8px}
+footer{
+  margin-top:32px;padding-top:18px;border-top:1px solid var(--border);
+  font-size:12.5px;color:var(--muted);text-align:center
+}
+.empty{text-align:center;padding:40px 0;color:var(--muted)}
+.sources{font-size:12.5px;color:var(--muted);margin-top:6px}
+.sources .fail{color:#b91c1c}
+@media (prefers-color-scheme: dark){ .sources .fail{color:#f87171} }
+a.plain{color:var(--accent);text-decoration:none}
+a.plain:hover{text-decoration:underline}
+a{color:inherit;text-decoration:none}
+.tip{
+  background:var(--card);border:1px dashed var(--border);border-radius:10px;
+  padding:10px 14px;font-size:12.5px;color:var(--muted);margin-bottom:14px
+}
+.purl{
+  margin-top:8px;font-size:11.5px;color:var(--muted);word-break:break-all;
+  background:var(--tagbg);border-radius:6px;padding:6px 8px;user-select:all;
+  -webkit-user-select:all;line-height:1.5
+}
+.idx{display:flex;flex-direction:column;gap:8px}
+.idx-item{
+  background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;
+  display:flex;justify-content:space-between;gap:12px;align-items:center
+}
+.idx-item:hover{border-color:var(--accent)}
+.idx-date{font-weight:600}
+.idx-count{font-size:12.5px;color:var(--muted)}
+@media (max-width:480px){
+  h1{font-size:21px} header{padding:26px 0 22px}
+  .card{padding:14px} .title{font-size:15.5px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">林朔集团</div>
+  <h1>科技前沿每日简报</h1>
+  <div class="sub">每日 12:00 自动生成 · 汇聚 7 家科技媒体 · 通俗解读</div>
+</div></header>
+<main class="wrap">
+  <div class="meta-bar">
+    <span class="pill">2026年10月27日 09:48</span>
+    <span class="pill">20 条精选</span>
+    <span class="pill">近 24 小时</span>
+    <span class="pill">摘要(兜底)</span>
+    
+  </div>
+  <div class="tip">📱 手机端如点击标题无反应，可长按链接选择「在浏览器打开」，或参考页尾的纯文本链接。</div>
+  <div class="list">
+      <article class="card" id="card-1">
+        <div class="card-top"><div class="rank">1</div><h2 class="title"><a href="https://www.ithome.com/1/018/231.htm" target="_self" rel="noopener noreferrer">AI 造富：Anthropic 七位联合创始人身家均超 130 亿美元</a></h2></div>
+        <div class="summary">Anthropic PBC 当地时间周一披露的 IPO 文件显示，公司七位联合创始人每人大约持有公司 1.4% 的股份，按估值计算…</div>
+        <div class="foot"><span class="badge">IT之家</span><span class="tag">10-27 09:17</span><a class="plain" href="https://www.ithome.com/1/018/231.htm" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.ithome.com/1/018/231.htm</div>
+      </article>
+      <article class="card" id="card-2">
+        <div class="card-top"><div class="rank">2</div><h2 class="title"><a href="https://www.ithome.com/1/018/230.htm" target="_self" rel="noopener noreferrer">菲尔兹奖得主邓煜评论 AI 公司反蒸馏：你不能只在你蒸馏全人类知识时支持蒸馏</a></h2></div>
+        <div class="summary">10 月 26 日报道，菲尔兹奖得主、芝加哥大学数学系教授邓煜在上周末的“知识分子”“赛先生”论坛上发表主旨演讲，系统阐述了他对 AI 时代数学研究的思考</div>
+        <div class="foot"><span class="badge">IT之家</span><span class="tag">10-27 09:11</span><a class="plain" href="https://www.ithome.com/1/018/230.htm" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.ithome.com/1/018/230.htm</div>
+      </article>
+      <article class="card" id="card-3">
+        <div class="card-top"><div class="rank">3</div><h2 class="title"><a href="https://www.ithome.com/1/018/229.htm" target="_self" rel="noopener noreferrer">苹果 Siri AI 即日起支持法语、日语、韩语等语言，繁体中文得等到年底前</a></h2></div>
+        <div class="summary">苹果今天（27 日）通过新闻稿宣布，今天发布的 27.2 版本软件更新，进一步扩大新一代 Siri AI 的使用范围…</div>
+        <div class="foot"><span class="badge">IT之家</span><span class="tag">10-27 09:04</span><a class="plain" href="https://www.ithome.com/1/018/229.htm" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.ithome.com/1/018/229.htm</div>
+      </article>
+      <article class="card" id="card-4">
+        <div class="card-top"><div class="rank">4</div><h2 class="title"><a href="https://www.ithome.com/1/018/228.htm" target="_self" rel="noopener noreferrer">Mac 版 Ollama 新增离线生成 AI 语音：数据不出门，速度比原方案最高快 35%</a></h2></div>
+        <div class="summary">本地运行 AI 模型的开源平台 Ollama 于 10 月 24 日宣布，其 Mac 应用正式支持文本转语音（TTS）生成…</div>
+        <div class="foot"><span class="badge">IT之家</span><span class="tag">10-27 09:00</span><a class="plain" href="https://www.ithome.com/1/018/228.htm" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.ithome.com/1/018/228.htm</div>
+      </article>
+      <article class="card" id="card-5">
+        <div class="card-top"><div class="rank">5</div><h2 class="title"><a href="https://aiera.com.cn/2026/10/27/other/admin/120899/openai%e6%96%b0%e6%a8%a1%e5%9e%8b%e6%9b%9d%e5%85%89%ef%bc%81gpt-6-1-terra%e6%8a%8a%e6%97%97%e8%88%b0%e5%8f%8d%e8%b6%85%e4%ba%86%ef%bc%9f/" target="_self" rel="noopener noreferrer">OpenAI新模型曝光！GPT-6.1 Terra把旗舰反超了？</a></h2></div>
+        <div class="summary">GPT-6.1 Terra，居然因为微软和GitHub的内部代码库更新，被眼尖的开发者们给扒出来了</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">10-27 08:06</span><a class="plain" href="https://aiera.com.cn/2026/10/27/other/admin/120899/openai%e6%96%b0%e6%a8%a1%e5%9e%8b%e6%9b%9d%e5%85%89%ef%bc%81gpt-6-1-terra%e6%8a%8a%e6%97%97%e8%88%b0%e5%8f%8d%e8%b6%85%e4%ba%86%ef%bc%9f/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://aiera.com.cn/2026/10/27/other/admin/120899/openai%e6%96%b0%e6%a8%a1%e5%9e%8b%e6%9b%9d%e5%85%89%ef%bc%81gpt-6-1-terra%e6%8a%8a%e6%97%97%e8%88%b0%e5%8f%8d%e8%b6%85%e4%ba%86%ef%bc%9f/</div>
+      </article>
+      <article class="card" id="card-6">
+        <div class="card-top"><div class="rank">6</div><h2 class="title"><a href="https://aiera.com.cn/2026/10/27/other/admin/120841/%e5%88%9a%e5%88%9a%ef%bc%8creddit%e6%9c%80%e5%a4%a7%e5%bc%80%e6%ba%90%e7%a4%be%e5%8c%ba%e5%85%a8%e9%9d%a2%e5%b0%81%e6%9d%80ai%ef%bc%81linux%e5%92%8cpython%e8%a2%ab%e9%99%a4%e5%90%8d/" target="_self" rel="noopener noreferrer">刚刚，Reddit最大开源社区全面封杀AI！Linux和Python被除名</a></h2></div>
+        <div class="summary">Reddit最大开源社区r/opensource，一纸禁令甩了出来——</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">10-27 08:03</span><a class="plain" href="https://aiera.com.cn/2026/10/27/other/admin/120841/%e5%88%9a%e5%88%9a%ef%bc%8creddit%e6%9c%80%e5%a4%a7%e5%bc%80%e6%ba%90%e7%a4%be%e5%8c%ba%e5%85%a8%e9%9d%a2%e5%b0%81%e6%9d%80ai%ef%bc%81linux%e5%92%8cpython%e8%a2%ab%e9%99%a4%e5%90%8d/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-7">
+        <div class="card-top"><div class="rank">7</div><h2 class="title"><a href="https://aiera.com.cn/2026/10/27/other/admin/120796/%e8%ae%a9%e5%86%b3%e7%ad%96%e6%88%90%e4%b8%ba%e6%a8%a1%e5%9e%8b%e8%ae%be%e8%ae%a1%e7%9a%84%e8%b5%b7%e7%82%b9%ef%bc%81nus%e6%8e%a8%e5%87%ba%e5%8e%9f%e7%94%9fsystem-one%e6%9e%b6%e6%9e%84/" target="_self" rel="noopener noreferrer">让决策成为模型设计的起点！NUS推出原生System One架构</a></h2></div>
+        <div class="summary">从一组文档中找到相关证据，判断一项条件是否成立，或按照标准给出评分——许多语言模型请求最终需要的，不是一篇长答案，而是一个明确…</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">10-27 08:02</span><a class="plain" href="https://aiera.com.cn/2026/10/27/other/admin/120796/%e8%ae%a9%e5%86%b3%e7%ad%96%e6%88%90%e4%b8%ba%e6%a8%a1%e5%9e%8b%e8%ae%be%e8%ae%a1%e7%9a%84%e8%b5%b7%e7%82%b9%ef%bc%81nus%e6%8e%a8%e5%87%ba%e5%8e%9f%e7%94%9fsystem-one%e6%9e%b6%e6%9e%84/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-8">
+        <div class="card-top"><div class="rank">8</div><h2 class="title"><a href="https://aiera.com.cn/2026/10/27/other/admin/120748/ai%e6%95%99%e7%a7%91%e4%b9%a6%e5%85%a8%e9%94%99%ef%bc%81%e5%ba%95%e5%b1%82%e5%85%ac%e5%bc%8f%e6%83%8a%e5%a4%a9bug%e6%9b%9d%e5%85%89%ef%bc%8cgemini%e7%8e%87%e5%85%88%e8%87%aa%e6%88%91%e4%bf%ae%e5%a4%8d/" target="_self" rel="noopener noreferrer">AI教科书全错！底层公式惊天Bug曝光，Gemini率先自我修复</a></h2></div>
+        <div class="summary">谷歌DeepMind的主任研究科学家 Jon Barron披露了这一重磅炸弹</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">10-27 08:00</span><a class="plain" href="https://aiera.com.cn/2026/10/27/other/admin/120748/ai%e6%95%99%e7%a7%91%e4%b9%a6%e5%85%a8%e9%94%99%ef%bc%81%e5%ba%95%e5%b1%82%e5%85%ac%e5%bc%8f%e6%83%8a%e5%a4%a9bug%e6%9b%9d%e5%85%89%ef%bc%8cgemini%e7%8e%87%e5%85%88%e8%87%aa%e6%88%91%e4%bf%ae%e5%a4%8d/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-9">
+        <div class="card-top"><div class="rank">9</div><h2 class="title"><a href="https://aiera.com.cn/2026/10/27/other/admin/120724/chatgpt%e6%94%bb%e5%85%8b26%e5%b9%b4%e7%8c%9c%e6%83%b3%ef%bc%8c%e5%8d%83%e4%bd%8d%e6%95%b0%e5%ad%a6%e5%ae%b6%e5%ae%a3%e6%88%98ai%ef%bc%81%e6%95%b0%e5%ad%a6%e7%95%8c%e5%bd%bb%e5%ba%95%e6%92%95%e8%a3%82/" target="_self" rel="noopener noreferrer">ChatGPT攻克26年猜想，千位数学家宣战AI！数学界彻底撕裂了</a></h2></div>
+        <div class="summary">统治人类逻辑高地几千年的数学家门，第一次感受到了「灭顶之灾」的寒意</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">10-27 08:00</span><a class="plain" href="https://aiera.com.cn/2026/10/27/other/admin/120724/chatgpt%e6%94%bb%e5%85%8b26%e5%b9%b4%e7%8c%9c%e6%83%b3%ef%bc%8c%e5%8d%83%e4%bd%8d%e6%95%b0%e5%ad%a6%e5%ae%b6%e5%ae%a3%e6%88%98ai%ef%bc%81%e6%95%b0%e5%ad%a6%e7%95%8c%e5%bd%bb%e5%ba%95%e6%92%95%e8%a3%82/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-10">
+        <div class="card-top"><div class="rank">10</div><h2 class="title"><a href="https://www.infoq.cn/article/2svt5BbWUOHbADdo0UZo?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">中科慧灵完成数亿元A++轮融资：制鞋机器人订单超 4 亿元，具身智能开始拼量产交付</a></h2></div>
+        <div class="summary">中科慧灵完成数亿元A++轮融资：制鞋机器人订单超 4 亿元，具身智能开始拼量产交付</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-27 02:30</span><a class="plain" href="https://www.infoq.cn/article/2svt5BbWUOHbADdo0UZo?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-11">
+        <div class="card-top"><div class="rank">11</div><h2 class="title"><a href="https://www.infoq.cn/article/b32Mw2zaPrxyJ6ChePD5?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">让 AI 从需求一路干到上线，软件开发组织要变了？</a></h2></div>
+        <div class="summary">让 AI 从需求一路干到上线，软件开发组织要变了？</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-27 02:08</span><a class="plain" href="https://www.infoq.cn/article/b32Mw2zaPrxyJ6ChePD5?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-12">
+        <div class="card-top"><div class="rank">12</div><h2 class="title"><a href="https://www.qbitai.com/2026/10/505551.html" target="_self" rel="noopener noreferrer">刚刚，Anthropic公开335页招股书：史上最大IPO，史上最亏AI公司</a></h2></div>
+        <div class="summary">地球最富兄妹俩堂堂来袭</div>
+        <div class="foot"><span class="badge">量子位</span><span class="tag">10-27 00:06</span><a class="plain" href="https://www.qbitai.com/2026/10/505551.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-13">
+        <div class="card-top"><div class="rank">13</div><h2 class="title"><a href="https://www.stdaily.com/web/gdxw/2026-10/27/content_602830.html" target="_self" rel="noopener noreferrer">通过分析患者基因信息，AI能预测癌症对免疫疗法反应</a></h2></div>
+        <div class="summary">韩国浦项科技大学科学家开发了一种人工智能（AI）方法，可通过分析癌症患者的基因信息，提前预测其对免疫疗法的反应，从而帮助判断哪些患者更可从中受益</div>
+        <div class="foot"><span class="badge">中国科技网</span><span class="tag">10-27</span><a class="plain" href="https://www.stdaily.com/web/gdxw/2026-10/27/content_602830.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-14">
+        <div class="card-top"><div class="rank">14</div><h2 class="title"><a href="https://www.stdaily.com/web/gdxw/2026-10/26/content_603054.html" target="_self" rel="noopener noreferrer">创新谈丨AI时代稳就业要做好两个“加法”</a></h2></div>
+        <div class="summary">近日，国务院办公厅印发《关于适应人工智能技术发展助力构建就业友好型发展方式的意见》，明确提出要“有效减缓人工智能应用就业替代影响”</div>
+        <div class="foot"><span class="badge">中国科技网</span><span class="tag">10-27</span><a class="plain" href="https://www.stdaily.com/web/gdxw/2026-10/26/content_603054.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-15">
+        <div class="card-top"><div class="rank">15</div><h2 class="title"><a href="https://www.stdaily.com/web/gdxw/2026-10/26/content_603051.html" target="_self" rel="noopener noreferrer">活力中国调研行丨海南商业航天发射场的奇迹</a></h2></div>
+        <div class="summary">海南商业航天发射场连战连捷，一线指挥员直言：这是中国商业航天的奇迹</div>
+        <div class="foot"><span class="badge">中国科技网</span><span class="tag">10-27</span><a class="plain" href="https://www.stdaily.com/web/gdxw/2026-10/26/content_603051.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-16">
+        <div class="card-top"><div class="rank">16</div><h2 class="title"><a href="https://www.stdaily.com/web/gdxw/2026-10/26/content_603034.html" target="_self" rel="noopener noreferrer">港大携手全球网络安全联盟联合成立人工智能与网络安全研究所</a></h2></div>
+        <div class="summary">日前，香港大学与全球网络安全联盟（GCSA）宣布联合成立“人工智能与网络安全研究所”（Centre for AI and Cybersecurity Resea…</div>
+        <div class="foot"><span class="badge">中国科技网</span><span class="tag">10-27</span><a class="plain" href="https://www.stdaily.com/web/gdxw/2026-10/26/content_603034.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-17">
+        <div class="card-top"><div class="rank">17</div><h2 class="title"><a href="https://www.infoq.cn/article/O7lcxqKD2avRPbNoMmtg?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">30 个 Agent 背后：花椒如何建设可持续演进的企业 AI 能力？</a></h2></div>
+        <div class="summary">30 个 Agent 背后：花椒如何建设可持续演进的企业 AI 能力？</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-26 23:05</span><a class="plain" href="https://www.infoq.cn/article/O7lcxqKD2avRPbNoMmtg?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-18">
+        <div class="card-top"><div class="rank">18</div><h2 class="title"><a href="https://www.infoq.cn/article/NrUkJExfuuFOICsjVYbb?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">模型好选，搜索难做：一个投研Agent的两年开发历程</a></h2></div>
+        <div class="summary">模型好选，搜索难做：一个投研Agent的两年开发历程</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-26 22:57</span><a class="plain" href="https://www.infoq.cn/article/NrUkJExfuuFOICsjVYbb?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-19">
+        <div class="card-top"><div class="rank">19</div><h2 class="title"><a href="https://www.infoq.cn/article/0C1Wgt7N9NzM6KjHSFeA?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">从 Agent 工程化到任务交付，解读 AI 走向生产的关键挑战｜QCon 上海 2026 圆满收官</a></h2></div>
+        <div class="summary">从 Agent 工程化到任务交付，解读 AI 走向生产的关键挑战｜QCon 上海 2026 圆满收官</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">10-26 19:53</span><a class="plain" href="https://www.infoq.cn/article/0C1Wgt7N9NzM6KjHSFeA?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-20">
+        <div class="card-top"><div class="rank">20</div><h2 class="title"><a href="https://www.qbitai.com/2026/10/505539.html" target="_self" rel="noopener noreferrer">AI时代，一个人能有多大能量？天禧AI × 观猹大会现场实测个人AI跨端协同新体验</a></h2></div>
+        <div class="summary">10月23日至25日，以“见证超能发生”为主题的“天禧AI × 观猹大会”在杭州茶叶博览会会议会展中心启幕</div>
+        <div class="foot"><span class="badge">量子位</span><span class="tag">10-26 17:46</span><a class="plain" href="https://www.qbitai.com/2026/10/505539.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+  </div>
+  <div class="sources">本次采集成功：IT之家、InfoQ中文、中国科技网、新智元、科技行者、至顶网、量子位</div>
+  <footer>本简报由自动化流水线生成，内容版权归原媒体所有，仅供内部参考。<br>生成时间 2026-10-27 09:48:29 · 耗时 4.4s</footer>
+</main>
+<script>
+(function () {
+  var ua = navigator.userAgent || '';
+  var inbox = /MicroMessenger|wxwork|QQ\//i.test(ua);
+
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[target="_self"]') : null;
+    if (!a) { return; }
+    if (a.classList.contains('idx-item')) { return; }
+    if (inbox) { return; }                 // 内置浏览器：走同窗口跳转，最稳
+    e.preventDefault();                    // 普通浏览器：尽量新开标签
+    var w = null;
+    try { w = window.open(a.href, '_blank'); } catch (err) { w = null; }
+    if (!w || w.closed || typeof w.closed === 'undefined') {
+      window.location.href = a.href;
+    }
+  }, true);
+})();
+</script>
+
+</body>
+</html>
