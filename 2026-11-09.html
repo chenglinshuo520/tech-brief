@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>科技前沿每日简报 · 2026-11-09</title>
+<style>
+:root{
+  --bg:#f5f7fa; --card:#ffffff; --text:#1f2937; --muted:#6b7280;
+  --accent:#1a73e8; --border:#e5e7eb; --badge:#eef2ff; --badge-text:#4338ca;
+  --tagbg:#f3f4f6; --shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f1115; --card:#181b21; --text:#e5e7eb; --muted:#9ca3af;
+         --border:#272b33; --badge:#1e2333; --badge-text:#a5b4fc;
+         --tagbg:#232830; --shadow:0 1px 3px rgba(0,0,0,.5); }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--text); line-height:1.7;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",
+              "Microsoft YaHei",sans-serif;
+  padding:0 0 48px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{
+  background:linear-gradient(135deg,var(--accent) 0%,#6366f1 100%);
+  color:#fff;padding:34px 0 28px;margin-bottom:22px;
+}
+header .wrap{display:flex;flex-direction:column;gap:6px}
+.brand{font-size:13px;letter-spacing:.14em;opacity:.9;text-transform:uppercase}
+h1{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.sub{font-size:14px;opacity:.92}
+.meta-bar{
+  display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  font-size:13px;color:var(--muted);margin-bottom:18px
+}
+.pill{background:var(--tagbg);border-radius:999px;padding:4px 11px;font-size:12px}
+.pill.warn{background:#fef3c7;color:#92400e}
+@media (prefers-color-scheme: dark){ .pill.warn{background:#3b2f10;color:#fcd34d} }
+.list{display:flex;flex-direction:column;gap:12px}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:16px 18px;box-shadow:var(--shadow);transition:transform .12s ease,border-color .12s ease;
+}
+.card:hover{transform:translateY(-1px);border-color:var(--accent)}
+.card-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.rank{
+  flex:0 0 auto;width:24px;height:24px;border-radius:7px;background:var(--accent);color:#fff;
+  font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;
+  margin-top:2px
+}
+.title{font-size:16.5px;font-weight:600;line-height:1.5;flex:1}
+.title a{color:inherit;text-decoration:none}
+.title a:hover{color:var(--accent);text-decoration:underline}
+.summary{color:var(--text);font-size:14.5px;opacity:.92;margin:2px 0 10px}
+.foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--muted)}
+.badge{background:var(--badge);color:var(--badge-text);border-radius:6px;padding:2px 8px;font-weight:600}
+.tag{background:var(--tagbg);border-radius:6px;padding:2px 8px}
+footer{
+  margin-top:32px;padding-top:18px;border-top:1px solid var(--border);
+  font-size:12.5px;color:var(--muted);text-align:center
+}
+.empty{text-align:center;padding:40px 0;color:var(--muted)}
+.sources{font-size:12.5px;color:var(--muted);margin-top:6px}
+.sources .fail{color:#b91c1c}
+@media (prefers-color-scheme: dark){ .sources .fail{color:#f87171} }
+a.plain{color:var(--accent);text-decoration:none}
+a.plain:hover{text-decoration:underline}
+a{color:inherit;text-decoration:none}
+.tip{
+  background:var(--card);border:1px dashed var(--border);border-radius:10px;
+  padding:10px 14px;font-size:12.5px;color:var(--muted);margin-bottom:14px
+}
+.purl{
+  margin-top:8px;font-size:11.5px;color:var(--muted);word-break:break-all;
+  background:var(--tagbg);border-radius:6px;padding:6px 8px;user-select:all;
+  -webkit-user-select:all;line-height:1.5
+}
+.idx{display:flex;flex-direction:column;gap:8px}
+.idx-item{
+  background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;
+  display:flex;justify-content:space-between;gap:12px;align-items:center
+}
+.idx-item:hover{border-color:var(--accent)}
+.idx-date{font-weight:600}
+.idx-count{font-size:12.5px;color:var(--muted)}
+@media (max-width:480px){
+  h1{font-size:21px} header{padding:26px 0 22px}
+  .card{padding:14px} .title{font-size:15.5px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">林朔集团</div>
+  <h1>科技前沿每日简报</h1>
+  <div class="sub">每日 12:00 自动生成 · 汇聚 7 家科技媒体 · 通俗解读</div>
+</div></header>
+<main class="wrap">
+  <div class="meta-bar">
+    <span class="pill">2026年11月09日 12:00</span>
+    <span class="pill">16 条精选</span>
+    <span class="pill">近 24 小时</span>
+    <span class="pill">摘要(兜底)</span>
+    
+  </div>
+  <div class="tip">📱 手机端如点击标题无反应，可长按链接选择「在浏览器打开」，或参考页尾的纯文本链接。</div>
+  <div class="list">
+      <article class="card" id="card-1">
+        <div class="card-top"><div class="rank">1</div><h2 class="title"><a href="https://www.infoq.cn/article/49JGp1l7v97riBlPpZ1q?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">Harness 已经很准了，为什么还需要一个 Agent Native Database</a></h2></div>
+        <div class="summary">Harness 已经很准了，为什么还需要一个 Agent Native Database</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-09 18:44</span><a class="plain" href="https://www.infoq.cn/article/49JGp1l7v97riBlPpZ1q?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.infoq.cn/article/49JGp1l7v97riBlPpZ1q?utm_source=rss&amp;utm_medium=article</div>
+      </article>
+      <article class="card" id="card-2">
+        <div class="card-top"><div class="rank">2</div><h2 class="title"><a href="https://www.infoq.cn/article/6kuDZAK0IFkKviGrGzIR?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">2.5小时一个零日，400多个root提权：Linux被AI挖成了筛子，人类逆向几周才看懂一个</a></h2></div>
+        <div class="summary">2.5小时一个零日，400多个root提权：Linux被AI挖成了筛子，人类逆向几周才看懂一个</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-09 18:25</span><a class="plain" href="https://www.infoq.cn/article/6kuDZAK0IFkKviGrGzIR?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.infoq.cn/article/6kuDZAK0IFkKviGrGzIR?utm_source=rss&amp;utm_medium=article</div>
+      </article>
+      <article class="card" id="card-3">
+        <div class="card-top"><div class="rank">3</div><h2 class="title"><a href="https://www.infoq.cn/article/wUArox9MHiAoyWPgRxpp?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">从“能写代码”到“能交付”：腾讯轻量云 LoopForge 多 Agent 编排实践｜AICon北京</a></h2></div>
+        <div class="summary">从“能写代码”到“能交付”：腾讯轻量云 LoopForge 多 Agent 编排实践｜AICon北京</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-09 18:00</span><a class="plain" href="https://www.infoq.cn/article/wUArox9MHiAoyWPgRxpp?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.infoq.cn/article/wUArox9MHiAoyWPgRxpp?utm_source=rss&amp;utm_medium=article</div>
+      </article>
+      <article class="card" id="card-4">
+        <div class="card-top"><div class="rank">4</div><h2 class="title"><a href="https://www.ithome.com/1/024/121.htm" target="_self" rel="noopener noreferrer">自然干旱叠加数据中心建设，印度尼西亚峇淡遭遇自来水供应危机</a></h2></div>
+        <div class="summary">据法新社当地时间本月 8 日报道，与新加坡隔海相望的印度尼西亚峇淡（巴淡）正因自然与人为两方面因素的共同影响遭遇自来水供应危机…</div>
+        <div class="foot"><span class="badge">IT之家</span><span class="tag">11-09 11:57</span><a class="plain" href="https://www.ithome.com/1/024/121.htm" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.ithome.com/1/024/121.htm</div>
+      </article>
+      <article class="card" id="card-5">
+        <div class="card-top"><div class="rank">5</div><h2 class="title"><a href="https://aiera.com.cn/2026/11/09/other/admin/123088/perplexity%e7%bb%99%e4%bd%a0%e9%85%8d%e4%ba%86%e4%b8%aaai%e5%90%8c%e4%ba%8b%ef%bc%9a%e5%8d%8a%e5%a4%9c%e6%8a%a5%e8%ad%a6%e5%ae%83%e5%85%88%e6%9f%a5%ef%bc%8c%e4%bf%ae%e5%a4%8d%e5%86%99%e5%a5%bd/" target="_self" rel="noopener noreferrer">Perplexity给你配了个AI同事：半夜报警它先查，修复写好才叫醒你批</a></h2></div>
+        <div class="summary">晚上 11 点 42 分，计费接口报警</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">11-09 08:13</span><a class="plain" href="https://aiera.com.cn/2026/11/09/other/admin/123088/perplexity%e7%bb%99%e4%bd%a0%e9%85%8d%e4%ba%86%e4%b8%aaai%e5%90%8c%e4%ba%8b%ef%bc%9a%e5%8d%8a%e5%a4%9c%e6%8a%a5%e8%ad%a6%e5%ae%83%e5%85%88%e6%9f%a5%ef%bc%8c%e4%bf%ae%e5%a4%8d%e5%86%99%e5%a5%bd/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://aiera.com.cn/2026/11/09/other/admin/123088/perplexity%e7%bb%99%e4%bd%a0%e9%85%8d%e4%ba%86%e4%b8%aaai%e5%90%8c%e4%ba%8b%ef%bc%9a%e5%8d%8a%e5%a4%9c%e6%8a%a5%e8%ad%a6%e5%ae%83%e5%85%88%e6%9f%a5%ef%bc%8c%e4%bf%ae%e5%a4%8d%e5%86%99%e5%a5%bd/</div>
+      </article>
+      <article class="card" id="card-6">
+        <div class="card-top"><div class="rank">6</div><h2 class="title"><a href="https://aiera.com.cn/2026/11/09/other/admin/123059/%e4%b9%9d%e6%88%90%e4%bb%a3%e7%a0%81ai%e5%86%99%ef%bc%8c%e8%b0%81%e6%9d%a5%e5%ae%a1%ef%bc%9fclaude-code%e4%ba%ae%e5%87%ba6%e9%81%93%e5%85%b3%e5%8d%a1%ef%bc%81/" target="_self" rel="noopener noreferrer">九成代码AI写，谁来审？Claude Code亮出6道关卡！</a></h2></div>
+        <div class="summary">Claude Code约90%的自身代码，已经交给Claude编写</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">11-09 08:11</span><a class="plain" href="https://aiera.com.cn/2026/11/09/other/admin/123059/%e4%b9%9d%e6%88%90%e4%bb%a3%e7%a0%81ai%e5%86%99%ef%bc%8c%e8%b0%81%e6%9d%a5%e5%ae%a1%ef%bc%9fclaude-code%e4%ba%ae%e5%87%ba6%e9%81%93%e5%85%b3%e5%8d%a1%ef%bc%81/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-7">
+        <div class="card-top"><div class="rank">7</div><h2 class="title"><a href="https://www.infoq.cn/article/YZx670AAiudsqZjx3UNo?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">Agent 越用越多，企业为何仍不够 AI Native？</a></h2></div>
+        <div class="summary">Agent 越用越多，企业为何仍不够 AI Native？</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-09 08:08</span><a class="plain" href="https://www.infoq.cn/article/YZx670AAiudsqZjx3UNo?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-8">
+        <div class="card-top"><div class="rank">8</div><h2 class="title"><a href="https://aiera.com.cn/2026/11/09/other/admin/123031/ai%e4%ba%b2%e6%89%8b%e6%94%b9%e5%86%99transformer%e6%9e%b6%e6%9e%84%ef%bc%81deepseek%e8%87%aa%e6%88%91%e6%94%b9%e9%80%a0%e6%9a%b4%e6%b6%a87%e5%88%86/" target="_self" rel="noopener noreferrer">AI亲手改写Transformer架构！DeepSeek自我改造暴涨7分</a></h2></div>
+        <div class="summary">7630亿参数的DeepSeek-V4.1-Flash，直接读取了自己做数学题时最深7层的内部激活状态</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">11-09 08:05</span><a class="plain" href="https://aiera.com.cn/2026/11/09/other/admin/123031/ai%e4%ba%b2%e6%89%8b%e6%94%b9%e5%86%99transformer%e6%9e%b6%e6%9e%84%ef%bc%81deepseek%e8%87%aa%e6%88%91%e6%94%b9%e9%80%a0%e6%9a%b4%e6%b6%a87%e5%88%86/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-9">
+        <div class="card-top"><div class="rank">9</div><h2 class="title"><a href="https://aiera.com.cn/2026/11/09/other/admin/123008/neurips26-%e5%8f%aa%e5%b9%b2%e9%a2%8410%e4%b8%aa%e7%bb%b4%e5%ba%a6%ef%bc%8c%e7%bb%99%e6%99%ba%e8%83%bd%e4%bd%93%e7%a9%bf%e4%b8%8a%e5%ae%89%e5%85%a8%e6%9c%ba%e7%94%b2%ef%bc%8c%e5%87%86%e7%a1%ae/" target="_self" rel="noopener noreferrer">NeurIPS’26 | 只干预10个维度，给智能体穿上安全机甲，准确率超97%</a></h2></div>
+        <div class="summary">当智能体能够读取文件、编写脚本、运行命令，并根据系统反馈持续调整下一步操作，一次错误决策就可能影响真实的文件与系统状…</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">11-09 08:03</span><a class="plain" href="https://aiera.com.cn/2026/11/09/other/admin/123008/neurips26-%e5%8f%aa%e5%b9%b2%e9%a2%8410%e4%b8%aa%e7%bb%b4%e5%ba%a6%ef%bc%8c%e7%bb%99%e6%99%ba%e8%83%bd%e4%bd%93%e7%a9%bf%e4%b8%8a%e5%ae%89%e5%85%a8%e6%9c%ba%e7%94%b2%ef%bc%8c%e5%87%86%e7%a1%ae/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-10">
+        <div class="card-top"><div class="rank">10</div><h2 class="title"><a href="https://aiera.com.cn/2026/11/09/other/admin/122955/%e4%b8%80%e4%b8%aa%e6%9c%8873-8%e4%ba%bf%e6%ac%a1%e6%8f%90%e4%ba%a4%ef%bc%81github%e8%a2%abai%e4%bb%a3%e7%a0%81%e6%8c%a4%e7%88%86%ef%bc%8c%e5%a2%9e%e9%85%8d400%e4%b8%87%e6%a0%b8%e8%bf%98%e4%b8%8d/" target="_self" rel="noopener noreferrer">一个月73.8亿次提交！GitHub被AI代码挤爆，增配400万核还不够</a></h2></div>
+        <div class="summary">代码写完点推送，进度条原地打转；自动测试卡死，合并请求合不进去，连AI编程助手Copilot也掉了线</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">11-09 08:00</span><a class="plain" href="https://aiera.com.cn/2026/11/09/other/admin/122955/%e4%b8%80%e4%b8%aa%e6%9c%8873-8%e4%ba%bf%e6%ac%a1%e6%8f%90%e4%ba%a4%ef%bc%81github%e8%a2%abai%e4%bb%a3%e7%a0%81%e6%8c%a4%e7%88%86%ef%bc%8c%e5%a2%9e%e9%85%8d400%e4%b8%87%e6%a0%b8%e8%bf%98%e4%b8%8d/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-11">
+        <div class="card-top"><div class="rank">11</div><h2 class="title"><a href="https://www.infoq.cn/article/xd9o6TyQ8GLON3dmiWpG?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">AI 生成视频何时才能告别“抽卡”？藏在高效生成背后的返工与成本难题</a></h2></div>
+        <div class="summary">AI 生成视频何时才能告别“抽卡”？藏在高效生成背后的返工与成本难题</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-09 00:19</span><a class="plain" href="https://www.infoq.cn/article/xd9o6TyQ8GLON3dmiWpG?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-12">
+        <div class="card-top"><div class="rank">12</div><h2 class="title"><a href="https://www.stdaily.com/web/gdxw/2026-11/09/content_610578.html" target="_self" rel="noopener noreferrer">我国成功发射卫星互联网低轨29组卫星</a></h2></div>
+        <div class="summary">记者从中国航天科技集团获悉，11月9日4时24分，长征十二号运载火箭在海南商业航天发射场点火起飞，随后成功将卫星互联网低轨29组卫星送入预定轨道…</div>
+        <div class="foot"><span class="badge">中国科技网</span><span class="tag">11-09</span><a class="plain" href="https://www.stdaily.com/web/gdxw/2026-11/09/content_610578.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-13">
+        <div class="card-top"><div class="rank">13</div><h2 class="title"><a href="https://www.stdaily.com/web/2026-11/09/content_610548.html" target="_self" rel="noopener noreferrer">十年前的今天，习近平同神舟十一号航天员进行天地通话</a></h2></div>
+        <div class="summary">2016年11月9日，总书记来到中国载人航天工程指挥中心，与神舟十一号航天员景海鹏、陈冬进行天地通话，亲切询问他们在太空的工作和生活情况</div>
+        <div class="foot"><span class="badge">中国科技网</span><span class="tag">11-09</span><a class="plain" href="https://www.stdaily.com/web/2026-11/09/content_610548.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-14">
+        <div class="card-top"><div class="rank">14</div><h2 class="title"><a href="https://www.infoq.cn/article/sy9XMK3zJ3jPwHBN5fQV?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">从约束到进化：Ontology 与 AI 自迭代的实践｜AICon北京</a></h2></div>
+        <div class="summary">从约束到进化：Ontology 与 AI 自迭代的实践｜AICon北京</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-08 18:00</span><a class="plain" href="https://www.infoq.cn/article/sy9XMK3zJ3jPwHBN5fQV?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-15">
+        <div class="card-top"><div class="rank">15</div><h2 class="title"><a href="https://www.infoq.cn/article/gOcDmZM2MPAQhWtNb6IJ?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">自动路由真能省钱吗？便宜模型出错后，人类修一小时可能更贵</a></h2></div>
+        <div class="summary">自动路由真能省钱吗？便宜模型出错后，人类修一小时可能更贵</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-08 17:00</span><a class="plain" href="https://www.infoq.cn/article/gOcDmZM2MPAQhWtNb6IJ?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-16">
+        <div class="card-top"><div class="rank">16</div><h2 class="title"><a href="https://www.qbitai.com/2026/11/508466.html" target="_self" rel="noopener noreferrer">资本正在撤离“世界模型”</a></h2></div>
+        <div class="summary">没有永远的夏天</div>
+        <div class="foot"><span class="badge">量子位</span><span class="tag">11-08 12:09</span><a class="plain" href="https://www.qbitai.com/2026/11/508466.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+  </div>
+  <div class="sources">本次采集成功：IT之家、InfoQ中文、中国科技网、新智元、科技行者、至顶网、量子位</div>
+  <footer>本简报由自动化流水线生成，内容版权归原媒体所有，仅供内部参考。<br>生成时间 2026-11-09 12:00:02 · 耗时 13.2s</footer>
+</main>
+<script>
+(function () {
+  var ua = navigator.userAgent || '';
+  var inbox = /MicroMessenger|wxwork|QQ\//i.test(ua);
+
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[target="_self"]') : null;
+    if (!a) { return; }
+    if (a.classList.contains('idx-item')) { return; }
+    if (inbox) { return; }                 // 内置浏览器：走同窗口跳转，最稳
+    e.preventDefault();                    // 普通浏览器：尽量新开标签
+    var w = null;
+    try { w = window.open(a.href, '_blank'); } catch (err) { w = null; }
+    if (!w || w.closed || typeof w.closed === 'undefined') {
+      window.location.href = a.href;
+    }
+  }, true);
+})();
+</script>
+
+</body>
+</html>
