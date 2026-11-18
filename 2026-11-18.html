@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>科技前沿每日简报 · 2026-11-18</title>
+<style>
+:root{
+  --bg:#f5f7fa; --card:#ffffff; --text:#1f2937; --muted:#6b7280;
+  --accent:#1a73e8; --border:#e5e7eb; --badge:#eef2ff; --badge-text:#4338ca;
+  --tagbg:#f3f4f6; --shadow:0 1px 3px rgba(0,0,0,.06),0 1px 2px rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f1115; --card:#181b21; --text:#e5e7eb; --muted:#9ca3af;
+         --border:#272b33; --badge:#1e2333; --badge-text:#a5b4fc;
+         --tagbg:#232830; --shadow:0 1px 3px rgba(0,0,0,.5); }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--text); line-height:1.7;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",
+              "Microsoft YaHei",sans-serif;
+  padding:0 0 48px; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{
+  background:linear-gradient(135deg,var(--accent) 0%,#6366f1 100%);
+  color:#fff;padding:34px 0 28px;margin-bottom:22px;
+}
+header .wrap{display:flex;flex-direction:column;gap:6px}
+.brand{font-size:13px;letter-spacing:.14em;opacity:.9;text-transform:uppercase}
+h1{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.sub{font-size:14px;opacity:.92}
+.meta-bar{
+  display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+  font-size:13px;color:var(--muted);margin-bottom:18px
+}
+.pill{background:var(--tagbg);border-radius:999px;padding:4px 11px;font-size:12px}
+.pill.warn{background:#fef3c7;color:#92400e}
+@media (prefers-color-scheme: dark){ .pill.warn{background:#3b2f10;color:#fcd34d} }
+.list{display:flex;flex-direction:column;gap:12px}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:16px 18px;box-shadow:var(--shadow);transition:transform .12s ease,border-color .12s ease;
+}
+.card:hover{transform:translateY(-1px);border-color:var(--accent)}
+.card-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px}
+.rank{
+  flex:0 0 auto;width:24px;height:24px;border-radius:7px;background:var(--accent);color:#fff;
+  font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;
+  margin-top:2px
+}
+.title{font-size:16.5px;font-weight:600;line-height:1.5;flex:1}
+.title a{color:inherit;text-decoration:none}
+.title a:hover{color:var(--accent);text-decoration:underline}
+.summary{color:var(--text);font-size:14.5px;opacity:.92;margin:2px 0 10px}
+.foot{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12.5px;color:var(--muted)}
+.badge{background:var(--badge);color:var(--badge-text);border-radius:6px;padding:2px 8px;font-weight:600}
+.tag{background:var(--tagbg);border-radius:6px;padding:2px 8px}
+footer{
+  margin-top:32px;padding-top:18px;border-top:1px solid var(--border);
+  font-size:12.5px;color:var(--muted);text-align:center
+}
+.empty{text-align:center;padding:40px 0;color:var(--muted)}
+.sources{font-size:12.5px;color:var(--muted);margin-top:6px}
+.sources .fail{color:#b91c1c}
+@media (prefers-color-scheme: dark){ .sources .fail{color:#f87171} }
+a.plain{color:var(--accent);text-decoration:none}
+a.plain:hover{text-decoration:underline}
+a{color:inherit;text-decoration:none}
+.tip{
+  background:var(--card);border:1px dashed var(--border);border-radius:10px;
+  padding:10px 14px;font-size:12.5px;color:var(--muted);margin-bottom:14px
+}
+.purl{
+  margin-top:8px;font-size:11.5px;color:var(--muted);word-break:break-all;
+  background:var(--tagbg);border-radius:6px;padding:6px 8px;user-select:all;
+  -webkit-user-select:all;line-height:1.5
+}
+.idx{display:flex;flex-direction:column;gap:8px}
+.idx-item{
+  background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;
+  display:flex;justify-content:space-between;gap:12px;align-items:center
+}
+.idx-item:hover{border-color:var(--accent)}
+.idx-date{font-weight:600}
+.idx-count{font-size:12.5px;color:var(--muted)}
+@media (max-width:480px){
+  h1{font-size:21px} header{padding:26px 0 22px}
+  .card{padding:14px} .title{font-size:15.5px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">林朔集团</div>
+  <h1>科技前沿每日简报</h1>
+  <div class="sub">每日 12:00 自动生成 · 汇聚 7 家科技媒体 · 通俗解读</div>
+</div></header>
+<main class="wrap">
+  <div class="meta-bar">
+    <span class="pill">2026年11月18日 12:00</span>
+    <span class="pill">20 条精选</span>
+    <span class="pill">近 24 小时</span>
+    <span class="pill">摘要(兜底)</span>
+    
+  </div>
+  <div class="tip">📱 手机端如点击标题无反应，可长按链接选择「在浏览器打开」，或参考页尾的纯文本链接。</div>
+  <div class="list">
+      <article class="card" id="card-1">
+        <div class="card-top"><div class="rank">1</div><h2 class="title"><a href="https://www.infoq.cn/article/uGTol3TSzOV72NSrcBrB?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">谷歌公布已发现 500 多个 XSS 漏洞的 AI 安全代理 PageBreak</a></h2></div>
+        <div class="summary">谷歌公布已发现 500 多个 XSS 漏洞的 AI 安全代理 PageBreak</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-18 19:00</span><a class="plain" href="https://www.infoq.cn/article/uGTol3TSzOV72NSrcBrB?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.infoq.cn/article/uGTol3TSzOV72NSrcBrB?utm_source=rss&amp;utm_medium=article</div>
+      </article>
+      <article class="card" id="card-2">
+        <div class="card-top"><div class="rank">2</div><h2 class="title"><a href="https://www.infoq.cn/article/lMs1bM1muspglUjMr1l3?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">GitHub 让 AI 接管工作流，单次默认预算 10 美元：是不是太大方了？</a></h2></div>
+        <div class="summary">GitHub 让 AI 接管工作流，单次默认预算 10 美元：是不是太大方了？</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-18 16:00</span><a class="plain" href="https://www.infoq.cn/article/lMs1bM1muspglUjMr1l3?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.infoq.cn/article/lMs1bM1muspglUjMr1l3?utm_source=rss&amp;utm_medium=article</div>
+      </article>
+      <article class="card" id="card-3">
+        <div class="card-top"><div class="rank">3</div><h2 class="title"><a href="https://www.ithome.com/1/028/689.htm" target="_self" rel="noopener noreferrer">“童话大王”郑渊洁停更 2 年后发声：用 AI 手搓动画短片开放免费观看，祝贺 00 后赶上知识平权好时代</a></h2></div>
+        <div class="summary">中国当代知名童话作家、“童话大王”郑渊洁 11 月 17 日发声，恢复停更两年的自媒体…</div>
+        <div class="foot"><span class="badge">IT之家</span><span class="tag">11-18 11:19</span><a class="plain" href="https://www.ithome.com/1/028/689.htm" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.ithome.com/1/028/689.htm</div>
+      </article>
+      <article class="card" id="card-4">
+        <div class="card-top"><div class="rank">4</div><h2 class="title"><a href="https://www.qbitai.com/2026/11/510737.html" target="_self" rel="noopener noreferrer">潜伏小红书48h：AI时代，顶尖技术人才都在聊什么？</a></h2></div>
+        <div class="summary">小红书校招沙龙，一群技术高手认真对待年轻人的野心</div>
+        <div class="foot"><span class="badge">量子位</span><span class="tag">11-18 10:49</span><a class="plain" href="https://www.qbitai.com/2026/11/510737.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://www.qbitai.com/2026/11/510737.html</div>
+      </article>
+      <article class="card" id="card-5">
+        <div class="card-top"><div class="rank">5</div><h2 class="title"><a href="https://aiera.com.cn/2026/11/18/other/admin/124300/%e5%be%ae%e8%bd%af%e5%85%a8%e7%90%83%e5%ae%95%e6%9c%ba30%e5%b0%8f%e6%97%b6%ef%bc%8cai%e6%9b%bf%e4%bb%a3%e5%91%98%e5%b7%a5%e8%a3%81%e5%88%b0%e5%a4%a7%e5%8a%a8%e8%84%89%ef%bc%9f/" target="_self" rel="noopener noreferrer">微软全球宕机30小时，AI替代员工裁到大动脉？</a></h2></div>
+        <div class="summary">从 Outlook 邮箱到 Teams 会议，前后整整瘫痪了 30 个小时，官方宣布恢复以后，世界上还有不少地方的邮件迟迟没有到达</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">11-18 08:10</span><a class="plain" href="https://aiera.com.cn/2026/11/18/other/admin/124300/%e5%be%ae%e8%bd%af%e5%85%a8%e7%90%83%e5%ae%95%e6%9c%ba30%e5%b0%8f%e6%97%b6%ef%bc%8cai%e6%9b%bf%e4%bb%a3%e5%91%98%e5%b7%a5%e8%a3%81%e5%88%b0%e5%a4%a7%e5%8a%a8%e8%84%89%ef%bc%9f/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+        <div class="purl">链接：https://aiera.com.cn/2026/11/18/other/admin/124300/%e5%be%ae%e8%bd%af%e5%85%a8%e7%90%83%e5%ae%95%e6%9c%ba30%e5%b0%8f%e6%97%b6%ef%bc%8cai%e6%9b%bf%e4%bb%a3%e5%91%98%e5%b7%a5%e8%a3%81%e5%88%b0%e5%a4%a7%e5%8a%a8%e8%84%89%ef%bc%9f/</div>
+      </article>
+      <article class="card" id="card-6">
+        <div class="card-top"><div class="rank">6</div><h2 class="title"><a href="https://aiera.com.cn/2026/11/18/other/admin/124286/gpt-6-2-astra%e9%9a%be%e4%ba%a7%e7%9c%9f%e7%9b%b8%e6%9b%9d%e5%85%89%ef%bc%81openai%e7%aa%81%e7%84%b6%e5%bd%bb%e6%9f%a5%e8%bf%84%e4%bb%8a%e6%9c%80%e5%a4%a7rl%e8%ae%ad%e7%bb%83/" target="_self" rel="noopener noreferrer">GPT-6.2 Astra难产真相曝光！OpenAI突然彻查迄今最大RL训练</a></h2></div>
+        <div class="summary">就在全网盯着OpenAI憋大招时，硅谷等来了一个更出人意料的消息</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">11-18 08:09</span><a class="plain" href="https://aiera.com.cn/2026/11/18/other/admin/124286/gpt-6-2-astra%e9%9a%be%e4%ba%a7%e7%9c%9f%e7%9b%b8%e6%9b%9d%e5%85%89%ef%bc%81openai%e7%aa%81%e7%84%b6%e5%bd%bb%e6%9f%a5%e8%bf%84%e4%bb%8a%e6%9c%80%e5%a4%a7rl%e8%ae%ad%e7%bb%83/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-7">
+        <div class="card-top"><div class="rank">7</div><h2 class="title"><a href="https://aiera.com.cn/2026/11/18/other/admin/124254/%e5%8f%8d%e8%b6%85%e8%b0%b7%e6%ad%8c%e7%8e%8b%e7%89%8c%e6%a8%a1%e5%9e%8b%ef%bc%81%e5%86%b3%e7%ad%96%e6%96%b0%e7%8e%8b%e6%8b%bf%e4%b8%8b%e5%85%a8%e7%90%83%e6%a6%9c%e9%a6%96%ef%bc%8c%e5%85%a8%e5%b0%ba/" target="_self" rel="noopener noreferrer">反超谷歌王牌模型！决策新王拿下全球榜首，全尺寸开源</a></h2></div>
+        <div class="summary">最近，即将敲钟的Anthropic在IPO材料中曝出天价算力缺口，给狂卷参数的AI行业当头浇下一盆冷水</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">11-18 08:06</span><a class="plain" href="https://aiera.com.cn/2026/11/18/other/admin/124254/%e5%8f%8d%e8%b6%85%e8%b0%b7%e6%ad%8c%e7%8e%8b%e7%89%8c%e6%a8%a1%e5%9e%8b%ef%bc%81%e5%86%b3%e7%ad%96%e6%96%b0%e7%8e%8b%e6%8b%bf%e4%b8%8b%e5%85%a8%e7%90%83%e6%a6%9c%e9%a6%96%ef%bc%8c%e5%85%a8%e5%b0%ba/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-8">
+        <div class="card-top"><div class="rank">8</div><h2 class="title"><a href="https://aiera.com.cn/2026/11/18/other/admin/124223/openai%e8%af%81%e6%98%8e%e4%ba%86%e3%80%8c%e6%a0%87%e5%87%86%e6%a8%a1%e5%9e%8b%e3%80%8d%ef%bc%81%e7%89%a9%e7%90%86%e5%ad%a6%e5%ae%b6%e7%9b%b4%e8%a8%80%ef%bc%9agpt-6-astra%e5%85%a8%e7%a8%8b%e4%b8%bb/" target="_self" rel="noopener noreferrer">OpenAI证明了「标准模型」！物理学家直言：GPT-6 Astra全程主导</a></h2></div>
+        <div class="summary">针对一个50多年来悬而未决的物理问题，GPT-6 Astra为加州大学圣塔芭芭拉分校UCSB物理学家Nathaniel Crai…</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">11-18 08:04</span><a class="plain" href="https://aiera.com.cn/2026/11/18/other/admin/124223/openai%e8%af%81%e6%98%8e%e4%ba%86%e3%80%8c%e6%a0%87%e5%87%86%e6%a8%a1%e5%9e%8b%e3%80%8d%ef%bc%81%e7%89%a9%e7%90%86%e5%ad%a6%e5%ae%b6%e7%9b%b4%e8%a8%80%ef%bc%9agpt-6-astra%e5%85%a8%e7%a8%8b%e4%b8%bb/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-9">
+        <div class="card-top"><div class="rank">9</div><h2 class="title"><a href="https://www.infoq.cn/article/X8xujm6xovp7z2YzWbpM?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">面向多智能体应用的大模型推理调度与缓存优化｜AICon北京</a></h2></div>
+        <div class="summary">面向多智能体应用的大模型推理调度与缓存优化｜AICon北京</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-18 02:53</span><a class="plain" href="https://www.infoq.cn/article/X8xujm6xovp7z2YzWbpM?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-10">
+        <div class="card-top"><div class="rank">10</div><h2 class="title"><a href="https://www.infoq.cn/article/SR3rNIg8NsPC3tWq48EM?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">Varlock 发布了 Bumpy：一种基于文件、可替代 Changesets 的版本控制方案</a></h2></div>
+        <div class="summary">Varlock 发布了 Bumpy：一种基于文件、可替代 Changesets 的版本控制方案</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-18</span><a class="plain" href="https://www.infoq.cn/article/SR3rNIg8NsPC3tWq48EM?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-11">
+        <div class="card-top"><div class="rank">11</div><h2 class="title"><a href="https://www.stdaily.com/web/gdxw/2026-11/18/content_614980.html" target="_self" rel="noopener noreferrer">AI短剧、数字人直播等新业态如何纳税</a></h2></div>
+        <div class="summary">今年以来，人工智能生成内容（AIGC）技术加速迭代，AI视频、AI绘画、AI写作、数字人直播等新业态蓬勃兴起</div>
+        <div class="foot"><span class="badge">中国科技网</span><span class="tag">11-18</span><a class="plain" href="https://www.stdaily.com/web/gdxw/2026-11/18/content_614980.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-12">
+        <div class="card-top"><div class="rank">12</div><h2 class="title"><a href="https://www.stdaily.com/web/gdxw/2026-11/18/content_614982.html" target="_self" rel="noopener noreferrer">从无人驾驶出租车到智能机器人  深圳科创亮点吸引外媒目光</a></h2></div>
+        <div class="summary">亚太经合组织（APEC）第三十三次领导人非正式会议即将在深圳举行</div>
+        <div class="foot"><span class="badge">中国科技网</span><span class="tag">11-18</span><a class="plain" href="https://www.stdaily.com/web/gdxw/2026-11/18/content_614982.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-13">
+        <div class="card-top"><div class="rank">13</div><h2 class="title"><a href="https://www.stdaily.com/web/gdxw/2026-11/18/content_614953.html" target="_self" rel="noopener noreferrer">人工智能训练师“解锁”具身智能产业新图景</a></h2></div>
+        <div class="summary">近日，在湖北人形机器人创新中心，人工智能训练师通过手柄遥控、VR设备模拟等方式训练人形机器人，引导其学习抓取商品、整理货架、打扫卫生等…</div>
+        <div class="foot"><span class="badge">中国科技网</span><span class="tag">11-18</span><a class="plain" href="https://www.stdaily.com/web/gdxw/2026-11/18/content_614953.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-14">
+        <div class="card-top"><div class="rank">14</div><h2 class="title"><a href="https://www.infoq.cn/article/m5arrx8021zHVI0ybFtI?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">“AI生成的代码必须开源！”开发者吵翻了，被开源代码喂大的Anthropic怕是第一个不同意</a></h2></div>
+        <div class="summary">“AI生成的代码必须开源！”开发者吵翻了，被开源代码喂大的Anthropic怕是第一个不同意</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-17 23:09</span><a class="plain" href="https://www.infoq.cn/article/m5arrx8021zHVI0ybFtI?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-15">
+        <div class="card-top"><div class="rank">15</div><h2 class="title"><a href="https://www.infoq.cn/article/AsfcqUsutpSlPIBE1ok9?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">Agent演示惊艳，一进生产就不好用：SAP直指企业AI落地的最大幻觉</a></h2></div>
+        <div class="summary">Agent演示惊艳，一进生产就不好用：SAP直指企业AI落地的最大幻觉</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-17 23:00</span><a class="plain" href="https://www.infoq.cn/article/AsfcqUsutpSlPIBE1ok9?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-16">
+        <div class="card-top"><div class="rank">16</div><h2 class="title"><a href="https://www.infoq.cn/article/X2WRCQI4NorJVEvpgX5B?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">Google Cloud API Gateway 推出面向实时 AI 应用的流式处理</a></h2></div>
+        <div class="summary">Google Cloud API Gateway 推出面向实时 AI 应用的流式处理</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-17 22:00</span><a class="plain" href="https://www.infoq.cn/article/X2WRCQI4NorJVEvpgX5B?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-17">
+        <div class="card-top"><div class="rank">17</div><h2 class="title"><a href="https://www.infoq.cn/article/uCmKjbkjjkW17olm7smj?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">Spring 近期资讯：Boot、Framework、Data、Security、Modulith 和 AI 的首个候选版本</a></h2></div>
+        <div class="summary">Spring 近期资讯：Boot、Framework、Data、Security、Modulith 和 AI 的首个候选版本</div>
+        <div class="foot"><span class="badge">InfoQ中文</span><span class="tag">11-17 20:42</span><a class="plain" href="https://www.infoq.cn/article/uCmKjbkjjkW17olm7smj?utm_source=rss&amp;utm_medium=article" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-18">
+        <div class="card-top"><div class="rank">18</div><h2 class="title"><a href="https://www.qbitai.com/2026/11/510688.html" target="_self" rel="noopener noreferrer">李沐加盟的Aimotion，是一家什么AI公司？</a></h2></div>
+        <div class="summary">瞄准「产业级世界模型」</div>
+        <div class="foot"><span class="badge">量子位</span><span class="tag">11-17 19:40</span><a class="plain" href="https://www.qbitai.com/2026/11/510688.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-19">
+        <div class="card-top"><div class="rank">19</div><h2 class="title"><a href="https://aiera.com.cn/2026/11/17/other/admin/124161/%e5%8d%8e%e4%b8%ba%e4%ba%91%e8%a1%8c%e4%b8%9aai%e6%a2%a6%e5%b7%a5%e5%8e%82%e5%8f%91%e5%b8%83%e5%b9%b6%e5%bc%80%e6%ba%90%e6%98%87%e8%85%be%e5%8e%9f%e7%94%9f%e5%85%b7%e8%ba%ab%e4%b8%96/" target="_self" rel="noopener noreferrer">华为云“行业AI梦工厂”发布并开源昇腾原生具身世界模型CloudRobo-WM1.2</a></h2></div>
+        <div class="summary">[中国，杭州，2026年11月16日] 今天，华为云“行业AI梦工厂”发布并开源昇腾原生的具身世界模型CloudRobo-WM1.2…</div>
+        <div class="foot"><span class="badge">新智元</span><span class="tag">11-17 15:25</span><a class="plain" href="https://aiera.com.cn/2026/11/17/other/admin/124161/%e5%8d%8e%e4%b8%ba%e4%ba%91%e8%a1%8c%e4%b8%9aai%e6%a2%a6%e5%b7%a5%e5%8e%82%e5%8f%91%e5%b8%83%e5%b9%b6%e5%bc%80%e6%ba%90%e6%98%87%e8%85%be%e5%8e%9f%e7%94%9f%e5%85%b7%e8%ba%ab%e4%b8%96/" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+      <article class="card" id="card-20">
+        <div class="card-top"><div class="rank">20</div><h2 class="title"><a href="https://www.qbitai.com/2026/11/510652.html" target="_self" rel="noopener noreferrer">材料科学智能体MatOS正式开源！大幅提高材料研发任务成功率</a></h2></div>
+        <div class="summary">筛材料、找配方、开发新模型…拿下多项科研任务</div>
+        <div class="foot"><span class="badge">量子位</span><span class="tag">11-17 14:09</span><a class="plain" href="https://www.qbitai.com/2026/11/510652.html" target="_self" rel="noopener noreferrer">阅读原文 →</a></div>
+      </article>
+  </div>
+  <div class="sources">本次采集成功：IT之家、InfoQ中文、中国科技网、新智元、科技行者、至顶网、量子位</div>
+  <footer>本简报由自动化流水线生成，内容版权归原媒体所有，仅供内部参考。<br>生成时间 2026-11-18 12:00:02 · 耗时 3.7s</footer>
+</main>
+<script>
+(function () {
+  var ua = navigator.userAgent || '';
+  var inbox = /MicroMessenger|wxwork|QQ\//i.test(ua);
+
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[target="_self"]') : null;
+    if (!a) { return; }
+    if (a.classList.contains('idx-item')) { return; }
+    if (inbox) { return; }                 // 内置浏览器：走同窗口跳转，最稳
+    e.preventDefault();                    // 普通浏览器：尽量新开标签
+    var w = null;
+    try { w = window.open(a.href, '_blank'); } catch (err) { w = null; }
+    if (!w || w.closed || typeof w.closed === 'undefined') {
+      window.location.href = a.href;
+    }
+  }, true);
+})();
+</script>
+
+</body>
+</html>
